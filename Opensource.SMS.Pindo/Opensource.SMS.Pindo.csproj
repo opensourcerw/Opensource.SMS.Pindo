@@ -17,9 +17,9 @@
     <PackageReleaseNotes>- initial project</PackageReleaseNotes>
     <Copyright>This package is copyright free but keep in mind that this package is a wrapper for Pindo API so, Pindo holds all the API copyright and credits.</Copyright>
     <PackageId>Opensourcerw.SMS.Pindo</PackageId>
-    <Version>0.1.0</Version>
-    <AssemblyVersion>0.0.1.0</AssemblyVersion>
-    <FileVersion>0.0.1.0</FileVersion>
+    <Version>0.1.1</Version>
+    <AssemblyVersion>0.0.1.1</AssemblyVersion>
+    <FileVersion>0.0.1.1</FileVersion>
   </PropertyGroup>
 
   <ItemGroup>
