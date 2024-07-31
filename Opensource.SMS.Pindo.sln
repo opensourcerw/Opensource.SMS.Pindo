@@ -3,7 +3,12 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.9.34723.18
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Opensource.SMS.Pindo", "Opensource.SMS.Pindo\Opensource.SMS.Pindo.csproj", "{E30C8AFC-68DF-401A-85AF-8C2808BC5F26}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Opensource.SMS.Pindo", "Opensource.SMS.Pindo\Opensource.SMS.Pindo.csproj", "{E30C8AFC-68DF-401A-85AF-8C2808BC5F26}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Opensource.SMS.Pindo.Tests.Unit", "Opensource.SMS.Pindo.Tests.Unit\Opensource.SMS.Pindo.Tests.Unit.csproj", "{F95A9FCC-6675-4FD3-BFC7-11EBAB614289}"
+	ProjectSection(ProjectDependencies) = postProject
+		{E30C8AFC-68DF-401A-85AF-8C2808BC5F26} = {E30C8AFC-68DF-401A-85AF-8C2808BC5F26}
+	EndProjectSection
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -15,6 +20,10 @@ Global
 		{E30C8AFC-68DF-401A-85AF-8C2808BC5F26}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{E30C8AFC-68DF-401A-85AF-8C2808BC5F26}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{E30C8AFC-68DF-401A-85AF-8C2808BC5F26}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F95A9FCC-6675-4FD3-BFC7-11EBAB614289}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F95A9FCC-6675-4FD3-BFC7-11EBAB614289}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F95A9FCC-6675-4FD3-BFC7-11EBAB614289}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F95A9FCC-6675-4FD3-BFC7-11EBAB614289}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
