@@ -1,9 +1,55 @@
 ﻿<Project Sdk="Microsoft.NET.Sdk">
 
   <PropertyGroup>
-    <TargetFramework>net8.0</TargetFramework>
+    <TargetFrameworks>net6.0;net8.0</TargetFrameworks>
+	<PackageLicenseExpression>Apache-2.0</PackageLicenseExpression>
     <ImplicitUsings>enable</ImplicitUsings>
-    <Nullable>enable</Nullable>
+    <Nullable>disable</Nullable>
+    <GeneratePackageOnBuild>True</GeneratePackageOnBuild>
+    <Title>Opensourcerw.SMS.Pindo</Title>
+    <Authors>Open source Rw</Authors>
+    <Description>A lightweight nuget package to easily send SMS messages using the Pindo API.</Description>
+    <PackageProjectUrl>https://github.com/opensourcerw/Opensource.SMS.Pindo</PackageProjectUrl>
+    <PackageReadmeFile>README.md</PackageReadmeFile>
+    <PackageIcon>pindo.png</PackageIcon>
+    <RepositoryUrl>https://github.com/opensourcerw/Opensource.SMS.Pindo</RepositoryUrl>
+    <PackageTags>sms,pindo,rwanda,kigali,open source,open,package</PackageTags>
+    <PackageReleaseNotes>- initial project</PackageReleaseNotes>
+    <Copyright>This package is copyright free but keep in mind that this package is a wrapper for Pindo API so, Pindo holds all the API copyright and credits.</Copyright>
+    <PackageId>Opensourcerw.SMS.Pindo</PackageId>
+    <Version>0.0.9</Version>
+    <AssemblyVersion>0.0.0.9</AssemblyVersion>
+    <FileVersion>0.0.0.9</FileVersion>
   </PropertyGroup>
+
+  <ItemGroup>
+    <None Include="..\..\..\Downloads\article\pindo.png">
+      <Pack>True</Pack>
+      <PackagePath>\</PackagePath>
+    </None>
+    <None Include="..\..\Skillsbox.Blazor.HealthApp\README.md">
+      <Pack>True</Pack>
+      <PackagePath>\</PackagePath>
+    </None>
+  </ItemGroup>
+	
+    <PropertyGroup Condition="'$(TargetFramework)' == 'net8.0'">
+	    <DefineConstants>NET8_0</DefineConstants>
+    </PropertyGroup>
+
+	<PropertyGroup Condition="'$(TargetFramework)' == 'net6.0'">
+		<DefineConstants>NET6_0</DefineConstants>
+	</PropertyGroup>
+	
+	<ItemGroup Condition="'$(TargetFramework)' == 'net8.0'">
+		<PackageReference Include="Microsoft.Extensions.DependencyInjection.Abstractions" Version="8.0.1" />
+		<PackageReference Include="Microsoft.Extensions.Http" Version="8.0.0" />
+	</ItemGroup>
+
+	<ItemGroup Condition="'$(TargetFramework)' == 'net6.0'">
+		<PackageReference Include="Microsoft.Extensions.DependencyInjection.Abstractions" Version="6.0.1" />
+		<PackageReference Include="Microsoft.Extensions.Http" Version="6.0.0" />
+	</ItemGroup>
+
 
 </Project>
