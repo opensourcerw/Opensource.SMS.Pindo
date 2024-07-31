@@ -1,0 +1,42 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net8.0</TargetFramework>
+	<PackageLicenseExpression>Apache-2.0</PackageLicenseExpression>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <Nullable>disable</Nullable>
+    <GeneratePackageOnBuild>True</GeneratePackageOnBuild>
+    <Title>Opensourcerw.SMS.Pindo</Title>
+    <Authors>Open source Rw</Authors>
+    <Description>A lightweight npm package to easily send SMS messages using the Pindo API.</Description>
+    <PackageProjectUrl>https://github.com/opensourcerw/Opensource.SMS.Pindo</PackageProjectUrl>
+    <PackageReadmeFile>README.md</PackageReadmeFile>
+    <PackageIcon>pindo.png</PackageIcon>
+    <RepositoryUrl>https://github.com/opensourcerw/Opensource.SMS.Pindo</RepositoryUrl>
+    <PackageTags>sms,pindo,rwanda,kigali,open source,open,package</PackageTags>
+    <PackageReleaseNotes>- initial project</PackageReleaseNotes>
+    <Copyright>This package is copyright free but keep in mind that this package is a wrapper for Pindo API so, Pindo holds all the API copyright and credits.</Copyright>
+    <PackageId>Opensourcerw.SMS.Pindo</PackageId>
+    <Version>1.0.5</Version>
+    <AssemblyVersion>1.0.0.5</AssemblyVersion>
+    <FileVersion>1.0.0.4</FileVersion>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <None Include="..\..\..\Downloads\article\pindo.png">
+      <Pack>True</Pack>
+      <PackagePath>\</PackagePath>
+    </None>
+    <None Include="..\..\Skillsbox.Blazor.HealthApp\README.md">
+      <Pack>True</Pack>
+      <PackagePath>\</PackagePath>
+    </None>
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Microsoft.Extensions.DependencyInjection.Abstractions" Version="8.0.1" />
+    <PackageReference Include="Microsoft.Extensions.Http" Version="8.0.0" />
+  </ItemGroup>
+
+
+</Project>
