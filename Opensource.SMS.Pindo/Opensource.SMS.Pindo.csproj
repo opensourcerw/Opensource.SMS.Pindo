@@ -13,7 +13,7 @@
     <PackageReadmeFile>README.md</PackageReadmeFile>
     <PackageIcon>pindo.png</PackageIcon>
     <RepositoryUrl>https://github.com/opensourcerw/Opensource.SMS.Pindo</RepositoryUrl>
-    <PackageTags>sms,pindo,rwanda,kigali,open source,open,package</PackageTags>
+    <PackageTags>sms,pindo,rwanda, kigali, open source,open source rwanda, open, package</PackageTags>
     <PackageReleaseNotes>- initial project</PackageReleaseNotes>
     <Copyright>This package is copyright free but keep in mind that this package is a wrapper for Pindo API so, Pindo holds all the API copyright and credits.</Copyright>
     <PackageId>Opensourcerw.SMS.Pindo</PackageId>
@@ -47,7 +47,7 @@
 	</ItemGroup>
 
 	<ItemGroup Condition="'$(TargetFramework)' == 'net6.0'">
-		<PackageReference Include="Microsoft.Extensions.DependencyInjection.Abstractions" Version="6.0.1" />
+		<PackageReference Include="Microsoft.Extensions.DependencyInjection.Abstractions" Version="6.0.0" />
 		<PackageReference Include="Microsoft.Extensions.Http" Version="6.0.0" />
 	</ItemGroup>
 
